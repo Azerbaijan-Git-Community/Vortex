@@ -6,9 +6,9 @@ void ui_print_banner(void)
 {
     printf("\n");
     printf("  " HABAMAX_CYAN HABAMAX_BOLD "\u250C\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510" HABAMAX_RESET "\n");
-    printf("  " HABAMAX_CYAN HABAMAX_BOLD "\u2502" HABAMAX_RESET "            " HABAMAX_ORANGE "V O R T E X" HABAMAX_RESET "            " HABAMAX_CYAN HABAMAX_BOLD "\u2502" HABAMAX_RESET "\n");
-    printf("  " HABAMAX_CYAN HABAMAX_BOLD "\u2502" HABAMAX_RESET "  Terminal Gateway for Open Source  " HABAMAX_CYAN HABAMAX_BOLD "\u2502" HABAMAX_RESET "\n");
-    printf("  " HABAMAX_CYAN HABAMAX_BOLD "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
+    printf("  " HABAMAX_CYAN HABAMAX_BOLD "\u2502" HABAMAX_RESET "             " HABAMAX_ORANGE "V O R T E X" HABAMAX_RESET "              " HABAMAX_CYAN HABAMAX_BOLD "\u2502" HABAMAX_RESET "\n");
+    printf("  " HABAMAX_CYAN HABAMAX_BOLD "\u2502" HABAMAX_RESET "   Terminal Gateway for Open Source   " HABAMAX_CYAN HABAMAX_BOLD "\u2502" HABAMAX_RESET "\n");
+    printf("  " HABAMAX_CYAN HABAMAX_BOLD "\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518" HABAMAX_RESET "\n");
     printf("\n");
 }
 
@@ -31,21 +31,21 @@ static const char *commit_color(int commits)
 void ui_print_leaderboard(const vortex_leaderboard *lb)
 {
     printf("  " HABAMAX_BOLD HABAMAX_BLUE "LEADERBOARD  Azerbaijan GitHub Community" HABAMAX_RESET "\n");
-    printf("  " HABAMAX_GREY "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
-    printf("  " HABAMAX_GREY "  #  Contributor                 C   PR   I   R" HABAMAX_RESET "\n");
-    printf("  " HABAMAX_GREY "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
+    printf("  " HABAMAX_GREY "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
+    printf("  " HABAMAX_GREY "  #       Contributor                 C   PR    I    R" HABAMAX_RESET "\n");
+    printf("  " HABAMAX_GREY "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
 
     int max_show = lb->count < 10 ? lb->count : 10;
     for (int i = 0; i < max_show; i++) {
         vortex_contributor *c = &lb->entries[i];
-        const char *medal = "";
-        if (c->rank == 1) medal = " \xF0\x9F\xA5\x87";
-        else if (c->rank == 2) medal = " \xF0\x9F\xA5\x88";
-        else if (c->rank == 3) medal = " \xF0\x9F\xA5\x89";
+        const char *medal = "    ";
+        if (c->rank == 1) medal = " \xF0\x9F\xA5\x87 ";
+        else if (c->rank == 2) medal = " \xF0\x9F\xA5\x88 ";
+        else if (c->rank == 3) medal = " \xF0\x9F\xA5\x89 ";
 
-        printf("  %s#%-3d%s" HABAMAX_RESET "  %s%-22s" HABAMAX_RESET
-               "  %s%3d" HABAMAX_RESET "  %s%2d" HABAMAX_RESET
-               "  %s%2d" HABAMAX_RESET "  %s%2d" HABAMAX_RESET "\n",
+        printf("  %s#%-3d%s" HABAMAX_RESET "%s%-24s" HABAMAX_RESET
+               "%s%5d" HABAMAX_RESET "%s%5d" HABAMAX_RESET
+               "%s%5d" HABAMAX_RESET "%s%5d" HABAMAX_RESET "\n",
                rank_color(c->rank), c->rank, medal,
                HABAMAX_BOLD, c->username,
                commit_color(c->commits), c->commits,

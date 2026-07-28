@@ -32,7 +32,7 @@ void ui_print_leaderboard(const vortex_leaderboard *lb)
 {
     printf("  " HABAMAX_BOLD HABAMAX_BLUE "LEADERBOARD  Azerbaijan GitHub Community" HABAMAX_RESET "\n");
     printf("  " HABAMAX_GREY "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
-    printf("  " HABAMAX_GREY "  #       Contributor                 C   PR    I    R" HABAMAX_RESET "\n");
+    printf("  " HABAMAX_GREY "#       Contributor                 C   PR    I    R" HABAMAX_RESET "\n");
     printf("  " HABAMAX_GREY "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
 
     int max_show = lb->count < 10 ? lb->count : 10;

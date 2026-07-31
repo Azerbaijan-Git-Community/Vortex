@@ -72,9 +72,9 @@ void ui_print_status(const vortex_user_status *st)
                st->commits_today < 0 ? "all-time" : "month");
         printf("  " HABAMAX_CYAN "PRs:" HABAMAX_RESET "      %s%d" HABAMAX_RESET "\n",
                st->pull_requests > 0 ? HABAMAX_GREEN : HABAMAX_GREY, st->pull_requests);
-        printf("  " HABAMAX_CYAN "Issues:" HABAMAX_RESET "    %s%d" HABAMAX_RESET "\n",
+        printf("  " HABAMAX_CYAN "Issues:" HABAMAX_RESET "   %s%d" HABAMAX_RESET "\n",
                st->issues > 0 ? HABAMAX_YELLOW : HABAMAX_GREY, st->issues);
-        printf("  " HABAMAX_CYAN "Reviews:" HABAMAX_RESET "   %s%d" HABAMAX_RESET "\n",
+        printf("  " HABAMAX_CYAN "Reviews:" HABAMAX_RESET "  %s%d" HABAMAX_RESET "\n",
                st->reviews > 0 ? HABAMAX_CYAN : HABAMAX_GREY, st->reviews);
     } else {
         printf("  " HABAMAX_GREY "  No data found for this user" HABAMAX_RESET "\n");

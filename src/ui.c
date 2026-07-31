@@ -32,7 +32,7 @@ void ui_print_leaderboard(const vortex_leaderboard *lb)
 {
     printf("  " HABAMAX_BOLD HABAMAX_BLUE "LEADERBOARD  Azerbaijan GitHub Community" HABAMAX_RESET "\n");
     printf("  " HABAMAX_GREY "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
-    printf("  " HABAMAX_GREY "  #       Contributor                 C   PR    I    R" HABAMAX_RESET "\n");
+    printf("  " HABAMAX_GREY "#       Contributor                 C   PR    I    R" HABAMAX_RESET "\n");
     printf("  " HABAMAX_GREY "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500" HABAMAX_RESET "\n");
 
     int max_show = lb->count < 10 ? lb->count : 10;
@@ -70,9 +70,9 @@ void ui_print_status(const vortex_user_status *st)
         printf("  " HABAMAX_CYAN "Commits:" HABAMAX_RESET "  %s%d" HABAMAX_RESET " (%s)\n",
                commit_color(st->commits_week), st->commits_week,
                st->commits_today < 0 ? "all-time" : "month");
-        printf("  " HABAMAX_CYAN "PRs:" HABAMAX_RESET "     %s%d" HABAMAX_RESET "\n",
+        printf("  " HABAMAX_CYAN "PRs:" HABAMAX_RESET "      %s%d" HABAMAX_RESET "\n",
                st->pull_requests > 0 ? HABAMAX_GREEN : HABAMAX_GREY, st->pull_requests);
-        printf("  " HABAMAX_CYAN "Issues:" HABAMAX_RESET "  %s%d" HABAMAX_RESET "\n",
+        printf("  " HABAMAX_CYAN "Issues:" HABAMAX_RESET "   %s%d" HABAMAX_RESET "\n",
                st->issues > 0 ? HABAMAX_YELLOW : HABAMAX_GREY, st->issues);
         printf("  " HABAMAX_CYAN "Reviews:" HABAMAX_RESET "  %s%d" HABAMAX_RESET "\n",
                st->reviews > 0 ? HABAMAX_CYAN : HABAMAX_GREY, st->reviews);

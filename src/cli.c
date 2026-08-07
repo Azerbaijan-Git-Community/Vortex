@@ -22,6 +22,11 @@ int cli_parse(int argc, char **argv, vortex_args *args)
         }
     } else if (strcmp(argv[1], "news") == 0) {
         args->command = CMD_NEWS;
+    } else if (strcmp(argv[1], "cache") == 0) {
+        if (argc > 2 && strcmp(argv[2], "--clear") == 0)
+            args->command = CMD_CACHE_CLEAR;
+        else
+            args->command = CMD_HELP;
     } else if (strcmp(argv[1], "help") == 0 || strcmp(argv[1], "--help") == 0) {
         args->command = CMD_HELP;
     } else if (strcmp(argv[1], "--version") == 0 || strcmp(argv[1], "-v") == 0) {
@@ -42,6 +47,7 @@ void cli_print_help(void)
     printf("  vortex leaderboard --all  All-time leaderboard\n");
     printf("  vortex status [username]  Personal ranking and progress\n");
     printf("  vortex news               Latest community announcements\n");
+    printf("  vortex cache --clear      Clear cached API responses\n");
     printf("  vortex help               Show this help message\n");
     printf("  vortex --version          Show version info\n");
 }

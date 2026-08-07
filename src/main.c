@@ -107,6 +107,10 @@ int main(int argc, char **argv)
         free(news.items);
         break;
     }
+    case CMD_CACHE_CLEAR:
+        cache_purge();
+        printf("Cache cleared.\n");
+        break;
     case CMD_VERSION:
         printf("Vortex v%s\n", VORTEX_VERSION);
         printf("https://github.com/Voctl/vortex\n");

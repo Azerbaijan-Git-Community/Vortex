@@ -7,6 +7,8 @@
 #include <string.h>
 #include <time.h>
 
+
+
 static int fetch_json(const char *url, const char *cache_key, char **out)
 {
     if (cache_key && cache_get(cache_key, out) == 0)
